@@ -136,7 +136,7 @@ print("Welcome to Love Sandwiuches Data Automation")
 stock_data = main()
 
 def get_stock_values(data):
-    headings = SHEET.worksheet("sales").get_all_values()[0]
+    headings = SHEET.worksheet("stock").get_all_values()[0]
     print("Make the following numbers of sandwiches for next market:\n")
     return {heading: data for heading, data in zip(headings, data)}
 
